@@ -1,0 +1,428 @@
+body{
+  margin:0;
+
+
+   background-color: red;
+   background-image: url("tinyvote.gif");
+    background-repeat: repeat;
+   overflow-x: hidden;
+}
+
+.container{
+  position: absolute;
+   left: 50%;
+   transform: translate(-50%, 0);
+   width:70vw;
+   background: white;
+   border-style: solid;
+   border-width: 10px;
+   border-color: white;
+}
+
+.sparkle{
+  width: 3vw;
+  margin-left: 12vw;
+  height:100vh;
+  position: fixed;
+  background-image: url('lights2.gif');
+  background-repeat: repeat-y;
+}
+
+.sparkle2{
+  width: 3vw;
+  margin-right: 10.5vw;
+  right:0;
+  height:100vh;
+  position: fixed;
+  background-image: url('lights.gif');
+  background-repeat: repeat-y;
+  overflow-y: hidden;
+}
+
+/* *********************** Header styling including banners ****************/
+
+.header{
+    width: 100%;
+    background-image:url("snow.gif") ;
+    text-align: center;
+    min-height:25vh;
+    background-size: cover;
+}
+
+.gifts{
+ position: absolute;
+ right:15%;
+ margin-top: 3vh;
+ font-family: arial;
+ font-weight: bold;
+ color: #FF6F00;
+ font-size: 1.2em;
+}
+
+.logo{
+  margin-bottom: 4vh;
+  text-align: center;
+  width: 95%;
+}
+
+.santa{
+  margin-left: -10vw;
+}
+
+.review{
+  position: relative;
+  margin-top: -3vh;
+  font-family: arial;
+  font-weight: bold;
+  margin-left: 1vw;
+}
+
+.corbs{
+ position: relative;
+  margin-top: 7vh;
+  margin-right: 9vw;
+  width:10vw;
+   transform: rotate(20deg);
+   z-index: 100;
+   float: right;
+}
+
+.jcbanner{
+  white-space: nowrap;
+  overflow-x: hidden;
+  background: yellow;
+    overflow-y:hidden;
+}
+
+.jc4pm{
+  width:100px;
+    margin-bottom: -35px;
+    margin-top: -25px;
+}
+
+.lightbanner{
+  white-space: nowrap;
+  overflow-x: hidden;
+    overflow-y:hidden;
+    height: 40px;
+    position: relative;
+}
+
+.lights{
+  margin-top: -220px;
+  margin-left: -20px;
+    margin-bottom: -230px;
+}
+
+.redbar{
+  background: red;
+  width: 100%;
+  min-height: 1vh;
+  background-image: url('candycaneline.gif');
+  background-repeat: repeat-x;
+}
+
+.greenbar{
+  width: 100%;
+  min-height: 1vh;
+  background-image: url('tinselline.gif');
+  background-repeat: repeat-x;
+}
+
+
+/* *********************** Everything in 'Compare deals' grid ****************/
+
+.first{
+  display: block;
+  position: relative;
+    height: 100%;
+}
+
+.comparison{
+  width:60%;
+  height: 100%;
+  display: inline-grid;
+  background: white;
+  grid-template-columns: [first] 33% [line2] 28% [line3] 5% [line4] auto [line5];
+   grid-template-rows: [row1-start] 8% [row1-end] 48% [third-line] 44% [last-line];
+}
+
+.service{
+  background: rgb(255,252,0);
+background: linear-gradient(360deg, rgba(255,252,0,0) 0%, rgba(255,34,34,1) 100%);
+  text-align: center;
+  font-family: arial;
+  font-weight: bold;
+  color: black;
+  height: auto;
+}
+
+#ballot{
+  width: 60%;
+}
+
+#labourblock{
+  grid-column-start: line4;
+   grid-column-end: line5;
+   grid-row-start: row1-end;
+   grid-row-end:last-line;
+}
+
+#labourblock p{
+  line-height: 1.3em;
+}
+
+.servicelogos{
+  width: 65%;
+ position: relative;
+}
+
+.spot{
+  margin-bottom: 3%;
+}
+
+.labour{
+  width: 85%;
+  margin-top: -8vh;
+}
+
+#new{
+  margin-top: -40px;
+}
+
+#new img{
+  width:50px;
+}
+
+#spotify{
+  background: rgb(9,9,121);
+  background: linear-gradient(360deg, rgba(9,9,121,0) 30%, rgba(29,209,93,1) 100%);
+  grid-column-start: line2;
+   grid-column-end: line4;
+   grid-row-start: row1-end;
+   grid-row-end:third-line;
+}
+
+#amazon{
+  background: rgb(9,9,121);
+background: linear-gradient(360deg, rgba(9,9,121,0) 40%, rgba(0,163,219,1) 100%);
+grid-column-start: first;
+ grid-column-end: line2;
+ grid-row-start: row1-end;
+ grid-row-end:third-line;
+}
+
+#alogo{
+  width:50%;
+  margin-bottom: 3vh;
+  margin-top:20px;
+}
+
+#slogo{
+  width:50%;
+  margin-top:20px;
+    margin-bottom: 1vh;
+
+}
+
+.money{
+  width: 6%;
+  margin-bottom: -5px;
+}
+
+.deals{
+  background: pink;
+  padding:5px;
+  grid-column-start: first;
+ grid-column-end: line5;
+ grid-row-start: row1-start;
+ grid-row-end: row1-end;
+ border-style: solid;
+ border-color: yellow;
+}
+
+.compare{
+    text-align: center;
+    font-size: 1.2em;
+    color: rgb(251, 255, 20);
+    width: 62%;
+    display: inline-block;
+    text-shadow: rgb(52, 77, 0) 2px 2px 2px;
+}
+
+.banner{
+  grid-column-start: first;
+   grid-column-end: line3;
+   grid-row-start: third-line;
+   grid-row-end:last-line;
+   background-image: url('snow.gif');
+     align-self: stretch;
+}
+
+.banner img{
+  width:100%;
+  height: 100%;
+}
+
+.arrow{
+  grid-row-start: third-line;
+  grid-row-end:last-line;
+    overflow-y:hidden;
+    background-image: url('arrow104.gif');
+    background-repeat: repeat-y;
+     background-color: #bdecff;
+}
+
+
+.price{
+  text-shadow: 2px 2px 2px #CE5937;
+  font-size: 1.2em;
+}
+
+
+/* *********************** Everything in Terms and Conditions****************/
+
+.terms{
+  width: 100%;
+  margin-top: 5vh;
+  display:inline-grid;
+  grid-template-columns: [first] 5% [line2] 12% [line3] 29% [line4] 6% [line5] 12% [line6] 29% [line7] auto [line8];
+   grid-template-rows: [row1-start] auto [row1-end]auto [row2] auto[row3] auto [row4]auto [row5]auto [row6]auto [row7]auto [row8];
+font-family: arial;
+margin-bottom: 1vh;
+font-size: 0.9em;
+}
+
+.terms h4{
+  font-size: 1.3em;
+  margin-block-start: 0.7em;
+    margin-block-end: 0.7em;
+    text-shadow: 5px 2px 2px #91C8CE;
+}
+
+.ttitle{
+    text-align: center;
+    grid-column-start: first;
+     grid-column-end: line8;
+     grid-row-start: row1-start;
+     grid-row-end:row1-end;
+}
+
+.tanc{
+  margin-top: -5%;
+  width: 60%;
+
+}
+
+.bells{
+  width: 6%;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+#buffer{
+  grid-column-start: first;
+   grid-column-end: line2;
+   grid-row-start: row1-end;
+   grid-row-end:row7;
+}
+
+#buffer2{
+  grid-column-start: line4;
+   grid-column-end: line5;
+   grid-row-start: row1-end;
+   grid-row-end:row7;
+}
+
+#buffer3{
+  grid-column-start: line7;
+   grid-column-end: line8;
+   grid-row-start: row1-end;
+   grid-row-end:row7;
+}
+
+ul{
+  list-style-image: url('redbullet.gif');
+}
+
+.catcopy2 ul{
+  list-style-image: url('greenbullet.gif');
+}
+
+.catimg{
+  width: 80%;
+  place-self: center;
+}
+
+.thanks{
+  height: 22vh;
+  background-color: black;
+  text-align: center;
+  width: 100%;
+  margin-top:5vh;
+  padding-top: 2vh;
+      grid-column-start: first;
+       grid-column-end: line8;
+       grid-row-start: row7;
+       grid-row-end:row8;
+}
+
+.thanks p{
+  color: white;
+}
+
+
+.second{
+  display: block;
+  position: relative;
+  height: 100%;
+  background: rgb(255,252,0);
+  background: radial-gradient(circle, rgba(255,252,0,0) 47%, rgba(255,252,0,0.8634804263502276) 100%);
+}
+
+.termstext{
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+
+/******************************* Calculator  ************************/
+
+.calcheader{
+  width: 100%;
+  background-color: yellow;
+  background-image: url('1245.gif');
+  background-repeat: repeat;
+}
+
+.calcheader p{
+  width: 60%;
+  float: left;
+  font-weight: bold;
+    margin-left: 3%;
+}
+
+.calcheader img{
+  width:35%;
+}
+
+.calculator{
+  width:40%;
+  background: white;
+  display: inline-block;
+  float:right;
+}
+
+.calcprice{
+  font-family: arial;
+  font-size: 2em;
+    margin-block-start: 0.2em;
+  color: red;
+  text-shadow: 2px 2px 2px rgba(62,27,17,0.81);
+}
+
+.earn{
+  font-size: 1.4em;
+margin-block-end: 0em;
+  margin-block-start: 0.5em;
+}
